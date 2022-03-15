@@ -31,7 +31,7 @@ if nx.is_valid_degree_sequence_havel_hakimi(a): # check if the sequence is valid
     E = [] # the edges in the beginning are empty
 
     while True:
-        # check if the values of the list ara all zero
+        # check if the values of the list are all zero
         all_zero = True
         for value in a:
             if value != 0:
@@ -40,14 +40,14 @@ if nx.is_valid_degree_sequence_havel_hakimi(a): # check if the sequence is valid
         if all_zero:
             break
 
-        ############# add for compile reasons, if someone want to see tse steps of the algorithm #################
+        ############# add for compile reasons, if someone want to see the steps of the algorithm #################
         print('------------start---------------')
 
         randomV = randrange(len(v))  # choose a random node > 0
         while a[randomV] <= 0:
             randomV = randrange(len(a))
 
-        ############# add for compile reasons, if someone want to see tse steps of the algorithm #################
+        ############# add for compile reasons, if someone want to see the steps of the algorithm #################
         print(f"a: {a}")
         print(f"E: {E}")
         print(f"randomV: {randomV}")
